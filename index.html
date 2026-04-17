@@ -18,8 +18,10 @@
 <p>This page is used for Google Analytics tracking.</p>
 <button onclick="trackClick()">Click Me</button>
 <script>
-function trackClick() { alert("Button clicked");
+function trackClick() { alert("Button clicked"); gtag('event', 'button_click', { 'event_category': 'engagement', 'event_label': 'demo_button'
+});
 }
 </script>
+
 </body>
 </html>
